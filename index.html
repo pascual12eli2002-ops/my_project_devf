@@ -2,22 +2,90 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programación con Python</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f9ff;
+            color: #333;
+        }
+        header {
+            background: #306998;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background: #ffe873;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #306998;
+        }
+        h1 {
+            color: #306998;
+        }
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        footer {
+            background: #306998;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .div-box {
+            background: #e0ecff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        pre {
+            background: #222;
+            color: #0f0;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- Título con estilo -->
-    <h1 style="color:green;">Programación con Python</h1>
+<header>
+    <h1>Programación con Python</h1>
+</header>
 
-    <!-- Imagen principal del tema -->
-    <img src="https://www.python.org/static/community_logos/python-logo.png" 
-         alt="Logo de Python" width="300">
+<nav>
+    <a href="#intro">Inicio</a>
+    <a href="#temas">Temas</a>
+    <a href="#articulos">Artículos</a>
+</nav>
 
-    <!-- Párrafo de introducción -->
+<section id="intro" class="card">
+    <h2>Introducción</h2>
+    <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Logo Python" width="250">
     <p>Python es un lenguaje de programación fácil de aprender, potente y muy utilizado en la actualidad.</p>
+</section>
 
-    <!-- Lista ordenada -->
+<section id="temas" class="card">
     <h2>Temas básicos de Python</h2>
     <ol>
         <li>Variables y tipos de datos</li>
@@ -27,8 +95,7 @@
         <li>Listas y diccionarios</li>
     </ol>
 
-    <!-- Lista desordenada -->
-    <h2>¿Dónde se usa Python?</h2>
+    <h3>¿Dónde se usa Python?</h3>
     <ul>
         <li>Desarrollo web</li>
         <li>Ciencia de datos</li>
@@ -36,54 +103,42 @@
         <li>Automatización</li>
     </ul>
 
-    <!-- Enlace a documentación -->
-    <a href="https://www.python.org/doc/">Documentación oficial de Python</a>
-
-    <!-- Otra imagen relacionada -->
+    <a href="https://www.python.org/doc/" target="_blank">Ir a la documentación oficial</a>
     <br><br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-         alt="Símbolo de Python" width="150">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python símbolo" width="120">
+</section>
 
-    <!-- Estructura semántica -->
-    <header>
-        <h2>Encabezado de la Página</h2>
-    </header>
+<section id="articulos" class="card">
+    <h2>Artículos</h2>
 
-    <nav>
-        <p>Menú de navegación (Inicio | Cursos | Proyectos)</p>
-    </nav>
+    <article class="card">
+        <h3>¿Qué es Python?</h3>
+        <p>Python es un lenguaje interpretado creado por Guido van Rossum.</p>
+    </article>
 
-    <main>
-        <article>
-            <h3>Artículo 1: ¿Qué es Python?</h3>
-            <p>Python es un lenguaje interpretado creado por Guido van Rossum.</p>
-        </article>
+    <article class="card">
+        <h3>Ejemplo de Código</h3>
+        <p>Un programa básico en Python:</p>
+        <pre>print("Hola desde Python!")</pre>
+    </article>
+</section>
 
-        <article>
-            <h3>Artículo 2: Ejemplo de código</h3>
-            <p>Un programa básico en Python:</p>
-            <pre>
-print("Hola desde Python!")
-            </pre>
-        </article>
-    </main>
+<section class="card">
+    <h2>Ejemplos con DIV</h2>
+    <div class="div-box">Este contenido está dentro de un div.</div>
+    <div class="div-box">Este es otro div.</div>
+</section>
 
-    <footer>
-        <p>Pie de página del sitio sobre Python</p>
-    </footer>
-
-    <!-- Divs -->
-    <h2>Ejemplo con DIV</h2>
-    <div>
-        Este contenido está dentro de un div.
-    </div>
-    <div>
-        Este es otro div.
-    </div>
-
-    <!-- Spans -->
+<section class="card">
     <h2>Ejemplo con SPAN</h2>
-    <p>Python es <span style="color:red;">rápido</span> y <span style="color:blue;">versátil</span>.</p>
+    <p>Python es <span style="color:red; font-weight:bold;">rápido</span> y <span style="color:blue; font-weight:bold;">versátil</span>.</p>
+</section>
+
+<footer>
+    <p>Pie de página del sitio sobre Python</p>
+    <p>Elaboro Elizabeth Pascual García</p>
+
+</footer>
 
 </body>
 </html>
